@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "invoice-receipt-extraction-agent"
+version = "0.1.0"
+description = "Extract invoice and receipt fields from PDFs using Gemini document understanding"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["google-genai==2.31.0", "pydantic>=2.11,<3"]
+
+[project.scripts]
+extract-document = "document_extractor.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/document_extractor"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

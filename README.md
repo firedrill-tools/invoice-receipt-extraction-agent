@@ -37,3 +37,5 @@ The intended simulation seam is this one-document CLI with an explicit PDF path,
 The app handles PDFs only, not images, email attachments, OCR cleanup, or ledger posting. It does not decide whether a vendor should be paid. The repository is local and unlicensed pending the portfolio's publication decision.
 
 Implementation references: [Gemini document understanding](https://ai.google.dev/gemini-api/docs/document-processing?lang=python) and [structured outputs](https://ai.google.dev/gemini-api/docs/structured-output?lang=python).
+
+Explore related applications in the [Firedrill example catalog](https://github.com/firedrill-tools/firedrill-example-catalog). Product and setup references: [Firedrill](https://firedrill.run/) and the [official developer documentation](https://docs.firedrill.run/). Use documentation matching the qualified release; this repository records its current integration limits above.

@@ -1,13 +1,14 @@
 # Agent guide
 
-The application entry point is `extract-document` in `src/document_extractor/cli.py`. `src/document_extractor/extract.py` owns the Gemini SDK boundary. It sends the PDF inline and validates the returned JSON; `models.py` performs a separate deterministic arithmetic check without rewriting extracted values.
+The entry point is `extract-document` in `src/document_extractor/cli.py`. `extract.py` owns the actual Gemini Interactions v1 boundary. `models.py` validates printed facts and checks exact decimal arithmetic without rewriting extracted values. `datasets.py` binds selected PDF bytes to versioned identities.
 
-- Configuration: set `GEMINI_API_KEY` through a secret manager. The default model is `gemini-3.8-flash`, configurable with `EXTRACTOR_MODEL` or `--model`.
-- Input: one local PDF of at most 10 MiB. No network document URL or production document store is supported.
-- State/reset: stateless. No uploaded file, background job, or external business operation remains after the request. Each invocation is independent.
-- Samples: `data/documents/` contains three fictional PDFs; `scripts/make_fixtures.py` reproduces them using reportlab. Scenario intent is in `scenarios/README.md`.
-- Completion: JSON stdout after the Gemini interaction returns and field validation/arithmetic finish. Exit `2` is input/configuration failure; exit `1` is an unexpected model/SDK failure.
-- Safe offline check: `uv sync --dev && uv run pytest -q && uv run extract-document --help`. No model call occurs.
-- Small live proof: with an authorized key, `uv run extract-document --document data/documents/ordinary-invoice.pdf`. This sends the fictional document to Gemini and may incur provider cost. Do not run all documents or repetitions automatically.
-- Evidence: the output contains model identifier, extracted fields, arithmetic status and SDK usage metadata if supplied. There is no recorded live model result yet.
-- Authorization: do not add customer PDFs, credentials, private output journals, or invented evaluation results. A new Firedrill connection must use its verified released interface, not the old drills.
+- Configuration: explicit `GEMINI_API_KEY` from a secret manager. Default model `gemini-3.8-flash`, configurable with `EXTRACTOR_MODEL` or `--model`. No alternate Google key/Vertex fallback in the CLI.
+- Input: one local PDF at most 10 MiB; bounded size, suffix and signature preflight, not full structural validation. `--case` checks the manifest digest and sends that immutable snapshot. No URLs, production store, or scenario/expected-answer text is sent.
+- Runtime: one foreground interaction, 30-second HTTP timeout, 4,096 output tokens, `store=false`, no Files API. The pinned 2.31.0 SDK needs `disable_interaction_retries` to correct its exposed retry config; its version/shape guards and actual HTTP count tests must be requalified on upgrade. Do not remove the guard or silently reintroduce retries. Caller-injected clients retain ownership and their policy.
+- State/reset: stateless; no background job or business operation. Owned SDK clients close on success and failure. Callers own any saved output.
+- Dataset: `data/manifest.json`, `northstar-extraction-documents` 1.0.0; ten synthetic PDFs, eleven pages, four profiles. `scripts/make_fixtures.py` reproduces them with pinned ReportLab. Keep masked identifiers out of hidden PDF text; change version and qualify hashes when changing fixtures. Render and visually inspect edited pages.
+- Completion: `completed` plus no diagnostics and valid structured text. Nonfinal/failed/invalid output is exit 1 JSON stderr, retaining available usage/raw text/hashes. Input/configuration is exit 2. Neither emits success stdout. Missing fields and arithmetic mismatches can be successful extractions requiring review, not agent failures.
+- Evidence: source/prompt hashes, case/version, requested/returned model, interaction status/ID, raw text, fields, arithmetic and review reasons. Interactions uses `usage`, not `usage_metadata`. Missing/partial usage stays unknown; never invent zero cost or require total=input+output. No live Gemini or new Firedrill run is recorded yet.
+- Offline gate: `uv sync --locked --dev`, `uv run --no-sync pytest -q`, `uv run --no-sync extract-document --list-cases`, `uv build --wheel`, `uv run --no-sync python scripts/check_wheel.py`. Actual SDK tests use only a local HTTP transport. Listing never calls a model.
+- Live proof: with an authorized key/budget, run one explicitly selected synthetic case. Do not launch a batch/repetition campaign or publish responses automatically.
+- Authorization: no customer PDFs, credentials, private journals or invented evaluation results. New Firedrill integration must use its verified released interface; never restore retired drills or private platform code. Public license/visibility remain parked.

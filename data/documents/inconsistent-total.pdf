@@ -32,8 +32,8 @@ endobj
 endobj
 6 0 obj
 <<
-/Author (anonymous) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
-  /Subject (unspecified) /Title (untitled) /Trapped /False
+/Author (Northstar synthetic example data) /CreationDate (D:20000101000000+00'00') /Creator (anonymous) /Keywords () /ModDate (D:20000101000000+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (unspecified) /Title (inconsistent total) /Trapped /False
 >>
 endobj
 7 0 obj
@@ -43,10 +43,85 @@ endobj
 endobj
 8 0 obj
 <<
-/Filter [ /ASCII85Decode /FlateDecode ] /Length 897
+/Length 2242
 >>
 stream
-Gau1-D/\,^&BE\k;r#Qu'!CWs.G?9ZBn\sKC;R?e=U9^1,UfJCq"?f(.A^#d`l\o#?\86kqjfCN0VEYGpRA>e/lF[DAAC1#$XePl8B2:>!MPrS@t:f1*^D^87YK.D"ViXi>(FIYN#?:9=I]PnJLCHa'KL-1aOOT/n$C<M0VGt.F:Fj3PHWH_+T;f6%nP$XGqL<+,2t8WVOA?]$H=N"NX"`]3pD\Kl!N>,@i.rGZg2k!*b`8RdtPu0Eu0t**#_WsFj:314DQ'Rn)pbJh3^dTV20YT&SFuD&IK')3B\'hb_[^ZWa-D-.`[e9FYhplU2D*S+M0/((5h!dPND23Y0bDDS$G"!1m1<6BIjr%&m8NN[o^(FkX*Dtef^5s<XHn&_7d/UW2H8(+&$:u(\-m4)1Pt5#9G-$0g>4RIFaURf&d6AeF%"t3WUgn4Dg8*YeKsJHob0JM6a'c206o?O3o!XruP5ig#6-#j1#/uD(NRa)-orZM3A&aY`g5ga<7cT2nnWkaUmW.6Ko*'ptk7sd5h;KkUS6Q?)5rV5<_5H./k)Be?";1f#M2dj(g76Ilh'Z9+k.'XWKRfEL9un@%qcF9]>='k&rRQj!">mN=?&>":h%;8&?K@b%ft8*Kf``JQ18C266o5=XDq!6u\s2QSoL^;^+*5D#K'@4E(U9I^Vrco.0N-0kXl/m:^,o"",lXA?T7D]62[o[6-^l3[h]3i3lkOj)IF-/-G85mq(sibu#HIlI4<kfCr:WKab^?[`eN6lYUoOmNC9$VHHo91&h;>Me9BL_=n!M@KDs7\&O.n%MLGfeNouAkV81?`Bf?+j_a/^RFFsCgpYkk]B0G>]X+Q[<=M)nXBaf18sj7.#'Er6T!n[tF!0t1a/B5C#3Wc3AjYtl.h3=C~>endstream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.070588 .133333 .207843 rg
+n 0 680 612 112 re f*
+1 1 1 rg
+BT /F2 21 Tf 25.2 TL ET
+BT 1 0 0 1 48 738 Tm (INVOICE) Tj T* ET
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 48 714 Tm (FICTIONAL SAMPLE DOCUMENT - NO REAL TRANSACTION) Tj T* ET
+.070588 .133333 .207843 rg
+BT /F2 17 Tf 20.4 TL ET
+BT 1 0 0 1 48 639 Tm (Cedar Studio) Tj T* ET
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 48 616 Tm (Invoice number: CS-778) Tj T* ET
+BT 1 0 0 1 486.18 616 Tm (Date: 2026-10-03) Tj T* ET
+.85098 .878431 .905882 RG
+n 48 551 m 564 551 l S
+.32549 .392157 .466667 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 48 570 Tm (CURRENCY) Tj T* ET
+.070588 .133333 .207843 rg
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 538.668 569 Tm (USD) Tj T* ET
+.85098 .878431 .905882 RG
+n 48 502 m 564 502 l S
+.32549 .392157 .466667 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 48 521 Tm (SERVICES) Tj T* ET
+.070588 .133333 .207843 rg
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 360.552 520 Tm (Professional materials | USD 125.00) Tj T* ET
+.85098 .878431 .905882 RG
+n 48 453 m 564 453 l S
+.32549 .392157 .466667 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 48 472 Tm (SUBTOTAL) Tj T* ET
+.070588 .133333 .207843 rg
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 498.636 471 Tm (USD 125.00) Tj T* ET
+.85098 .878431 .905882 RG
+n 48 404 m 564 404 l S
+.32549 .392157 .466667 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 48 423 Tm (TAX) Tj T* ET
+.070588 .133333 .207843 rg
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 505.308 422 Tm (USD 10.00) Tj T* ET
+.85098 .878431 .905882 RG
+n 48 355 m 564 355 l S
+.32549 .392157 .466667 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 48 374 Tm (PRINTED TOTAL) Tj T* ET
+.070588 .133333 .207843 rg
+BT /F2 12 Tf 14.4 TL ET
+BT 1 0 0 1 498.636 373 Tm (USD 130.00) Tj T* ET
+.945098 .960784 .972549 rg
+n
+54 276 m
+558 276 l
+561.3168 276 564 278.6832 564 282 c
+564 307 l
+564 310.3168 561.3168 313 558 313 c
+54 313 l
+50.6832 313 48 310.3168 48 307 c
+48 282 l
+48 278.6832 50.6832 276 54 276 c
+h
+f*
+.070588 .133333 .207843 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 62 294 Tm (Amounts are shown as printed. Keep this copy with your service records.) Tj T* ET
+.32549 .392157 .466667 rg
+BT /F1 9 Tf 10.8 TL ET
+BT 1 0 0 1 48 42 Tm (Northstar example portfolio - synthetic records only) Tj T* ET
+BT 1 0 0 1 546.486 42 Tm (1 / 1) Tj T* ET
+ 
+endstream
 endobj
 xref
 0 9
@@ -57,12 +132,12 @@ xref
 0000000321 00000 n 
 0000000514 00000 n 
 0000000582 00000 n 
-0000000843 00000 n 
-0000000902 00000 n 
+0000000876 00000 n 
+0000000935 00000 n 
 trailer
 <<
 /ID 
-[<1c178198fbdfa51b25995d89d4102043><1c178198fbdfa51b25995d89d4102043>]
+[<06adb7a729ada2b2800fb7cef15047cf><06adb7a729ada2b2800fb7cef15047cf>]
 % ReportLab generated PDF document -- digest (opensource)
 
 /Info 6 0 R
@@ -70,5 +145,5 @@ trailer
 /Size 9
 >>
 startxref
-1889
+3228
 %%EOF

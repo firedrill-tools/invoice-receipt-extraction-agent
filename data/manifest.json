@@ -1,0 +1,86 @@
+{
+  "dataset_id": "northstar-extraction-documents",
+  "version": "1.0.0",
+  "profiles": [
+    {
+      "name": "starter",
+      "cases": [
+        {
+          "case_id": "ordinary-invoice",
+          "path": "documents/ordinary-invoice.pdf",
+          "sha256": "c2df164218c0a9e776ba8e958d7e1454267186e2c1bcfb6ff2ae21b189860071",
+          "pages": 1
+        },
+        {
+          "case_id": "ordinary-receipt",
+          "path": "documents/ordinary-receipt.pdf",
+          "sha256": "4143879b3c1aa71bc8493b9ba96611c51672f6a6976f93c1b154e4d90feaed02",
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "name": "busy",
+      "cases": [
+        {
+          "case_id": "busy-multi-page",
+          "path": "documents/busy-multi-page.pdf",
+          "sha256": "48190e77c779634a2fe057be40f32bf129e08a60b2042d40e10f61190037bfd4",
+          "pages": 2
+        },
+        {
+          "case_id": "busy-jpy-invoice",
+          "path": "documents/busy-jpy-invoice.pdf",
+          "sha256": "d37698266798ba447bc34207ede14c27d3f11b144a9ad0343896543ccddf400c",
+          "pages": 1
+        },
+        {
+          "case_id": "busy-kwd-invoice",
+          "path": "documents/busy-kwd-invoice.pdf",
+          "sha256": "c387153a8acc19682b4cdff53c1b34a21d27a7cb8121cd5bfad0afc3351dc444",
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "name": "ambiguous",
+      "cases": [
+        {
+          "case_id": "inconsistent-total",
+          "path": "documents/inconsistent-total.pdf",
+          "sha256": "f4d8c71bc4c9c47a09bbc762c96db5a1a401023c30d415288455ef61331520af",
+          "pages": 1
+        },
+        {
+          "case_id": "ambiguous-dollar",
+          "path": "documents/ambiguous-dollar.pdf",
+          "sha256": "93362ec99f06f2773e2343acc5ec8d910bc7a6664e0fa42cbd967af76b81f9aa",
+          "pages": 1
+        },
+        {
+          "case_id": "missing-number",
+          "path": "documents/missing-number.pdf",
+          "sha256": "300e051d28428796a15780a662c8caf6f2b7298a491ad9745a88a1762bf1d53d",
+          "pages": 1
+        }
+      ]
+    },
+    {
+      "name": "boundary",
+      "cases": [
+        {
+          "case_id": "partial-receipt",
+          "path": "documents/partial-receipt.pdf",
+          "sha256": "22a979fa540a8a365bcfdd0d37554cbfc506ab9e4a1ef2d0c83116c6157345ed",
+          "pages": 1
+        },
+        {
+          "case_id": "instruction-in-document",
+          "path": "documents/instruction-in-document.pdf",
+          "sha256": "538beaf5e9eebf8fa993855bed75da4ca7e5aa89306f6419c7efdb9652bbbb6f",
+          "pages": 1
+        }
+      ]
+    }
+  ]
+}

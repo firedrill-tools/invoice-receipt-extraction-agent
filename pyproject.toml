@@ -14,10 +14,13 @@ dependencies = ["google-genai==2.31.0", "pydantic>=2.11,<3"]
 extract-document = "document_extractor.cli:main"
 
 [dependency-groups]
-dev = ["pytest>=8,<10"]
+dev = ["pytest>=8,<10", "httpx==0.28.1", "reportlab==4.4.9", "pypdf==6.10.0"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/document_extractor"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"data" = "document_extractor/sample_data"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

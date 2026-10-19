@@ -12,3 +12,7 @@ The entry point is `extract-document` in `src/document_extractor/cli.py`. `extra
 - Offline gate: `uv sync --locked --dev`, `uv run --no-sync pytest -q`, `uv run --no-sync extract-document --list-cases`, `uv build --wheel`, `uv run --no-sync python scripts/check_wheel.py`. Actual SDK tests use only a local HTTP transport. Listing never calls a model.
 - Live proof: with an authorized key/budget, run one explicitly selected synthetic case. Do not launch a batch/repetition campaign or publish responses automatically.
 - Authorization: no customer PDFs, credentials, private journals or invented evaluation results. New Firedrill integration must use its verified released interface; never restore retired drills or private platform code. Public license/visibility remain parked.
+
+## Current Firedrill connection — 2026-10-19
+
+The optional `firedrill/` toolchain now pins released CLI/SDK 2.2.2. Read its README, preserve the actual application entry point and run its offline tests with the existing verification gates. Earlier release-unavailability notes are historical; authenticated persisted and live model proofs remain pending. No retired API, guessed Tool binding, canned normal response or paid campaign.

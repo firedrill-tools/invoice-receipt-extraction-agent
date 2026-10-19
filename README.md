@@ -66,3 +66,7 @@ The app handles PDFs, not images, email attachments, OCR cleanup or ledger posti
 Implementation references: [Interactions v1 API](https://ai.google.dev/api/interactions-api-v1), [Gemini document understanding](https://ai.google.dev/gemini-api/docs/document-processing?lang=python) and [structured outputs](https://ai.google.dev/gemini-api/docs/structured-output?lang=python).
 
 Explore related applications in the [Firedrill example catalog](https://github.com/firedrill-tools/firedrill-example-catalog). Product and setup references: [Firedrill](https://firedrill.run/) and the [official developer documentation](https://docs.firedrill.run/). Use documentation matching the qualified release.
+
+## Current Firedrill connection — 2026-10-19
+
+The [agent-first adapter and recipe](firedrill/README.md) now use exact-pinned CLI/SDK 2.2.2 and the current command envelope. This supersedes earlier notes saying the release was unavailable. Offline validation is distinct from authenticated persisted execution and live model quality, which remain pending.

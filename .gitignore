@@ -6,3 +6,7 @@ __pycache__/
 dist/
 run-output/
 tmp/
+
+node_modules/
+
+.runs/

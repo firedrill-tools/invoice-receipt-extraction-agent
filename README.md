@@ -2,6 +2,8 @@
 
 This CLI sends one local PDF to Gemini, validates structured fields, and separately checks whether the extracted subtotal plus tax equals the printed total. It preserves a contradictory printed total. It uses `google-genai` 2.31.0 and the foreground Interactions v1 API; it performs no payment or accounting operation.
 
+This example repository is publicly viewable. A project license has not been selected.
+
 ## Simulate with Firedrill
 
 [Firedrill](https://firedrill.run/) is a simulation platform for AI agents.
@@ -75,7 +77,7 @@ CI runs these checks without a provider key. Tests use the actual Gemini SDK wit
 
 The intended simulation seam is this one-document CLI with explicit input identity, JSON completion evidence and no retained application state. The included [Firedrill integration](firedrill/README.md) uses the actual CLI; authenticated persisted runs remain unverified. There is no claim of a Firedrill report or live Gemini result. Do not copy commands or configuration from the retired product.
 
-The app handles PDFs, not images, email attachments, OCR cleanup or ledger posting. Public visibility and licensing remain pending the portfolio's publication decision.
+The app handles PDFs, not images, email attachments, OCR cleanup or ledger posting. The repository is publicly viewable; no project license has been selected.
 
 Implementation references: [Interactions v1 API](https://ai.google.dev/api/interactions-api-v1), [Gemini document understanding](https://ai.google.dev/gemini-api/docs/document-processing?lang=python) and [structured outputs](https://ai.google.dev/gemini-api/docs/structured-output?lang=python).
 

@@ -1,6 +1,20 @@
-# Extract invoice and receipt fields from PDFs with Gemini
+# Invoice and receipt extraction agent with Gemini and Python
 
 This CLI sends one local PDF to Gemini, validates structured fields, and separately checks whether the extracted subtotal plus tax equals the printed total. It preserves a contradictory printed total. It uses `google-genai` 2.31.0 and the foreground Interactions v1 API; it performs no payment or accounting operation.
+
+## Simulate with Firedrill
+
+[Firedrill](https://firedrill.run/) is a simulation platform for AI agents.
+Start from this repository’s root:
+
+```sh
+npx firedrill-run init
+```
+
+Sign in and choose your project, then follow the [simulation run guide](firedrill/README.md)
+for application dependencies, a preview and the reviewed scenarios. Your agent runs
+locally or in your CI; model credentials stay separate from Firedrill sign-in.
+The included recipes record outcomes without an automatic quality score or CI gate.
 
 ## Run one document
 
@@ -59,7 +73,7 @@ CI runs these checks without a provider key. Tests use the actual Gemini SDK wit
 
 ## Firedrill boundary and limits
 
-The intended simulation seam is this one-document CLI with explicit input identity, JSON completion evidence and no retained application state. A Firedrill integration awaits the new verified released interface and a persisted run. There is no claim of a Firedrill report or live Gemini result. Do not copy commands or configuration from the retired product.
+The intended simulation seam is this one-document CLI with explicit input identity, JSON completion evidence and no retained application state. The included [Firedrill integration](firedrill/README.md) uses the actual CLI; authenticated persisted runs remain unverified. There is no claim of a Firedrill report or live Gemini result. Do not copy commands or configuration from the retired product.
 
 The app handles PDFs, not images, email attachments, OCR cleanup or ledger posting. Public visibility and licensing remain pending the portfolio's publication decision.
 
